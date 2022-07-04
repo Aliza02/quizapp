@@ -29,3 +29,16 @@ body{
 .start-btn{
     width: 120px;
 }
+.question-1{
+    display: none;
+}
+.container-fluid{
+    display: none;
+}
+.container-fluid.active{
+    display: flex;
+}
+.question-1.active{
+    display: block;
+    
+}

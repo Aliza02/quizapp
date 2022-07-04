@@ -15,10 +15,13 @@ export class AppComponent {
   ngOnInit(): void {
     }
 
-    submit(){
+    start(){
       console.log('asda');
           let containerFluid=document.querySelector('.container-fluid');
-        console.log(containerFluid);
+          let question_1=document.querySelector('.question-1');
+          let submit=document.querySelector('.start-btn');
+            question_1?.classList.add('active');
+            containerFluid?.classList.remove('active');         
     }
 
 }
