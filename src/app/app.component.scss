@@ -21,6 +21,12 @@ body{
   box-shadow: 5px 5px 5px rgb(82, 80, 80,0.7);
   position: relative;
 }
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .quiz-img{
     width: 200px;
     margin-bottom: 150px;
@@ -29,6 +35,7 @@ body{
 }
 .start-btn{
     width: 120px;
+    font-size: 17px;
 }
 .ring1,.ring2,.ring3,.ring4{
     background-color: white;
@@ -45,24 +52,27 @@ body{
 }
 .ring3{
     position: absolute;
-    top:22%;
+    top:21%;
 }
 .ring4{
     position: absolute;
-    top:22%;
+    top:21%;
     left: 27.5%;
-
 }
 .question-1{
     display: none;
 }
-.container-fluid{
+
+.home{
     display: none;
 }
-.container-fluid.active{
+.home.active{
     display: flex;
 }
-.question-1.active{
-    display: block;
-    
+.question1{
+    display: none;
+    background-color: white;
+}
+.question1.active{
+    display: block;    
 }

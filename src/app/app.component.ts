@@ -18,10 +18,11 @@ export class AppComponent {
     start(){
       console.log('asda');
           let containerFluid=document.querySelector('.container-fluid');
-          let question_1=document.querySelector('.question-1');
+          let home=document.querySelector('.home');
+          let question_1=document.querySelector('.question1');
           let submit=document.querySelector('.start-btn');
             question_1?.classList.add('active');
-            containerFluid?.classList.remove('active');         
+            home?.classList.remove('active');         
     }
 
 }
