@@ -4,20 +4,45 @@
     <span class="ring3"></span>
     <span class="ring4"></span>
 
+
+
     <div class="container-fluid ">
+        <!-- <mat-progress-bar mode="determinate" value="0"></mat-progress-bar> -->
         <div class="home active">
             <img src="https://st3.depositphotos.com/4320021/33340/v/380/depositphotos_333403152-stock-illustration-ribbon-banner-with-text-quiz.jpg?forcejpeg=true"
                 alt=" quiz logo" class="quiz-img">
             <button mat-raised-button color="accent" (click)="start()" class="start-btn">Start</button>
             
         </div>
+
         <div class="question1 questions">
+           
+            <h1>Which planet has the most moons?</h1>
+            <button mat-raised-button class="option" (click)="question2()"> Saturn</button>
+            <button mat-raised-button class="option" (click)="question2()"> Venus</button>
+            <button mat-raised-button class="option" (click)="question2()"> Uranus</button>
+            <button mat-raised-button class="option" (click)="question2()"> Mars</button>
             
-           <mat-icon> <span class="material-symbols-outlined">
-                arrow_right
-                </span>
-            </mat-icon>
-                <!-- <h1>Which planet has the most moons?</h1> -->
+        </div>
+        <div class="question2 questions">
+           
+            <h1>How many hearts does an octopus have?</h1>
+            
+            <button mat-raised-button class="option" (click)="question2()"> 2</button>
+            <button mat-raised-button class="option" (click)="question2()"> 3</button>
+            <button mat-raised-button class="option" (click)="question2()">10</button>
+            <button mat-raised-button class="option" (click)="question2()">7</button>
+            
+        </div>
+        <div class="question3 questions">
+           
+            <h1>What is the only continent with land in all four hemispheres?</h1>
+            
+            <button mat-raised-button class="option" (click)="question3()"> Australia</button>
+            <button mat-raised-button class="option" (click)="question3()"> Antartica</button>
+            <button mat-raised-button class="option" (click)="question3()">Africa</button>
+            <button mat-raised-button class="option" (click)="question3()">Asia</button>
+            
         </div>
     </div>
 
