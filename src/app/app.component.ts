@@ -18,6 +18,8 @@ export class AppComponent {
     start(){
           let home=document.querySelector('.home');
           let question_1=document.querySelector('.question1');
+          let progress=document.querySelector('.progress');
+          progress?.classList.add('active');
             question_1?.classList.add('active');
             home?.classList.remove('active');      
     }
