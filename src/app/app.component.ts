@@ -12,6 +12,7 @@ export class AppComponent {
   public progressValue:any;
   public correct=false;
   public ans=0;
+  public win=false;
   
   
   constructor(){
@@ -30,6 +31,7 @@ export class AppComponent {
             question_1?.classList.add('active');
             home?.classList.remove('active');    
            this. progressValue  =0;
+           
 
            
     }
@@ -101,11 +103,29 @@ export class AppComponent {
       // console.log(this.ans);
     }
 
-    
+    result(){
+      // this.progressValue+=10;
+      let question_10=document.querySelector('.question10');
+      let winner=document.querySelector('.winner');
+      let loser=document.querySelector('.loser');
+      let progress=document.querySelector('.progress');
+      progress?.classList.remove('active');
+      question_10?.classList.remove('active');
+      
+ 
+     if(this.ans>5){
+        this.win=true;
+        winner?.classList.add('active');
+     }
+     else{
+      this.win=false;
+      loser?.classList.add('active');
+     }
+    }
     correctans(){
       this.ans++;        
     }
-
+   
 
     
 
