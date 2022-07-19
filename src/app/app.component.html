@@ -113,17 +113,18 @@
             <button mat-raised-button class="option" (click)="result()">United Kingdom</button>
             
         </div>
-        <div class="winner">
+        <div class="winner result">
             <img src="https://www.pngplay.com/wp-content/uploads/8/Winner-Trophy-PNG-Clipart-Background.png" alt="">
             <h1>Congratulations </h1>
             <h1>Correct= {{ans}}</h1>
-            
+            <button mat-raised-button (click)="start()" color="accent">Play Again</button>
         </div>
-        <div class="loser">
+        <div class="loser result">
             <img src="https://cdn.pixabay.com/photo/2020/12/19/02/50/emoji-5843434_1280.png" alt="">
             <h1>Oops! </h1>
             <h1>Try Again</h1>
             <h1>Correct= {{ans}}</h1>
+            <button mat-raised-button (click)="start()" color="accent">Play Again</button>
         </div>
     </div>
 
