@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { elementAt } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'quizeapp';
   public progressValue:any;
+  public correct=false;
+  public ans=0;
+  
   
   constructor(){
-
   }
+
+
 
   ngOnInit(): void {
     }
@@ -25,6 +30,8 @@ export class AppComponent {
             question_1?.classList.add('active');
             home?.classList.remove('active');    
            this. progressValue  =0;
+
+           
     }
     
     question2(){
@@ -33,7 +40,13 @@ export class AppComponent {
       question_1?.classList.remove('active');
       question_2?.classList.add('active');
       this. progressValue  +=10;
-    }
+      // if(this.correct==true){
+      //   this.ans++;
+      // }
+      // console.log(this.ans);
+  
+      }
+
     question3(){
       let question_2=document.querySelector('.question2');
       let question_3=document.querySelector('.question3');
@@ -90,5 +103,7 @@ export class AppComponent {
       question_10?.classList.add('active');
       this. progressValue+=10;
     }
+
+    
 
 }

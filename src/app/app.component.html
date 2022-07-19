@@ -7,7 +7,7 @@
 
 
     <div class="container-fluid ">
-        <mat-progress-bar mode="determinate" [value]=progressValue class="progress" id="progress-bar"></mat-progress-bar>
+        <mat-progress-bar mode="determinate" [value]=progressValue class="progress"></mat-progress-bar>
         <div class="home active">
             <img src="https://st3.depositphotos.com/4320021/33340/v/380/depositphotos_333403152-stock-illustration-ribbon-banner-with-text-quiz.jpg?forcejpeg=true"
                 alt=" quiz logo" class="quiz-img">
@@ -18,11 +18,10 @@
         <div class="question1 questions">
            
             <h1>Which planet has the most moons?</h1>
-            <button mat-raised-button class="option" (click)="question2()"> Saturn</button>
-            <button mat-raised-button class="option" (click)="question2()"> Venus</button>
-            <button mat-raised-button class="option" (click)="question2()"> Uranus</button>
-            <button mat-raised-button class="option" (click)="question2()"> Mars</button>
-            
+            <button mat-raised-button class="option" id="saturn" (click)="question2()"> Saturn</button>
+            <button mat-raised-button class="option" id="venus"  (click)="question2()"> Venus</button>
+            <button mat-raised-button class="option"  id ="uranus" (click)="question2()"> Uranus</button>
+            <button mat-raised-button class="option" id="mars" (click)="question2()"> Mars</button>
         </div>
         <div class="question2 questions">
            

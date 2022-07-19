@@ -121,7 +121,6 @@ body{
     display: block;
     height: 10px;
     width: 700px;
-    // margin-right: 100px;
     position: absolute;
     top:80px
     
@@ -135,7 +134,34 @@ body{
 }
 
 ::ng-deep .mat-progress-bar {
-    border-radius: 30px;
-    height: 100px;
-    
+    border-radius: 30px; 
+}
+
+@media(max-width:959px){
+    .ring1{
+        position: absolute;
+        top:8%;
+        left: 12%;
+    }
+    .ring2{
+        position: absolute;
+        left:15%;
+        top:8%;
+    }
+    .ring3{
+        position: absolute;
+        top:12%;
+        left: 12%;
+    }
+    .ring4{
+        position: absolute;
+        top:12%;
+        left: 15%;
+    }
+
+    .container-fluid{
+        width: 80%;
+        height: 90%;
+    }
+
 }
