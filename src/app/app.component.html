@@ -18,7 +18,7 @@
         <div class="question1 questions">
            
             <h1>Which planet has the most moons?</h1>
-            <button mat-raised-button class="option" id="saturn" (click)="question2()"> Saturn</button>
+            <button mat-raised-button class="option" id="saturn" (click)="question2();correctans()"> Saturn</button>
             <button mat-raised-button class="option" id="venus"  (click)="question2()"> Venus</button>
             <button mat-raised-button class="option"  id ="uranus" (click)="question2()"> Uranus</button>
             <button mat-raised-button class="option" id="mars" (click)="question2()"> Mars</button>
@@ -28,7 +28,7 @@
             <h1>How many hearts does an octopus have?</h1>
             
             <button mat-raised-button class="option" (click)="question3()"> 2</button>
-            <button mat-raised-button class="option" (click)="question3()"> 3</button>
+            <button mat-raised-button class="option" (click)="question3();correctans()"> 3</button>
             <button mat-raised-button class="option" (click)="question3()">10</button>
             <button mat-raised-button class="option" (click)="question3()">7</button>
             
@@ -39,7 +39,7 @@
             
             <button mat-raised-button class="option" (click)="question4()"> Australia</button>
             <button mat-raised-button class="option" (click)="question4()"> Antartica</button>
-            <button mat-raised-button class="option" (click)="question4()">Africa</button>
+            <button mat-raised-button class="option" (click)="question4();correctans()">Africa</button>
             <button mat-raised-button class="option" (click)="question4()">Asia</button>
             
         </div>
@@ -49,7 +49,7 @@
             
             <button mat-raised-button class="option" (click)="question5()"> Norway</button>
             <button mat-raised-button class="option" (click)="question5()"> Netherland</button>
-            <button mat-raised-button class="option" (click)="question5()">Finland</button>
+            <button mat-raised-button class="option" (click)="question5();correctans()">Finland</button>
             <button mat-raised-button class="option" (click)="question5()">South Korea</button>
             
         </div>
@@ -58,7 +58,7 @@
             <h1>What is the national sport of Japan? </h1>
             
             <button mat-raised-button class="option" (click)="question6()"> cricket</button>
-            <button mat-raised-button class="option" (click)="question6()"> Sumo Wrestling</button>
+            <button mat-raised-button class="option" (click)="question6();correctans()"> Sumo Wrestling</button>
             <button mat-raised-button class="option" (click)="question6()">Baseball</button>
             <button mat-raised-button class="option" (click)="question6()">Polo</button>
             
@@ -67,7 +67,7 @@
            
             <h1>What city is known as "The Eternal City"? </h1>
             
-            <button mat-raised-button class="option" (click)="question7()"> Rome</button>
+            <button mat-raised-button class="option" (click)="question7();correctans()"> Rome</button>
             <button mat-raised-button class="option" (click)="question7()"> Tokyo</button>
             <button mat-raised-button class="option" (click)="question7()">Mexico</button>
             <button mat-raised-button class="option" (click)="question7()">Osaka</button>
@@ -78,7 +78,7 @@
             <h1>How many minutes are in a full week? </h1>
             
             <button mat-raised-button class="option" (click)="question8()"> 18070</button>
-            <button mat-raised-button class="option" (click)="question8()"> 10080</button>
+            <button mat-raised-button class="option" (click)="question8();correctans()"> 10080</button>
             <button mat-raised-button class="option" (click)="question8()">12367</button>
             <button mat-raised-button class="option" (click)="question8()">22678</button>
             
@@ -89,7 +89,7 @@
             
             <button mat-raised-button class="option" (click)="question9()"> 44</button>
             <button mat-raised-button class="option" (click)="question9()"> 46</button>
-            <button mat-raised-button class="option" (click)="question9()">42</button>
+            <button mat-raised-button class="option" (click)="question9();correctans()">42</button>
             <button mat-raised-button class="option" (click)="question9()">40</button>
             
         </div>
@@ -98,7 +98,7 @@
             <h1>Where did sushi originate? </h1>
             
             <button mat-raised-button class="option" (click)="question10()"> Japan</button>
-            <button mat-raised-button class="option" (click)="question10()"> China</button>
+            <button mat-raised-button class="option" (click)="question10();correctans()"> China</button>
             <button mat-raised-button class="option" (click)="question10()">Korea</button>
             <button mat-raised-button class="option" (click)="question10()">Malaysia</button>
             
@@ -109,7 +109,7 @@
             
             <button mat-raised-button class="option" > Turkey</button>
             <button mat-raised-button class="option" > United States</button>
-            <button mat-raised-button class="option" >South Africa</button>
+            <button mat-raised-button class="option" (click)="correctans()" >South Africa</button>
             <button mat-raised-button class="option" >United Kingdom</button>
             
         </div>

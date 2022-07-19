@@ -40,11 +40,7 @@ export class AppComponent {
       question_1?.classList.remove('active');
       question_2?.classList.add('active');
       this. progressValue  +=10;
-      // if(this.correct==true){
-      //   this.ans++;
-      // }
-      // console.log(this.ans);
-  
+    
       }
 
     question3(){
@@ -102,7 +98,14 @@ export class AppComponent {
       question_9?.classList.remove('active');
       question_10?.classList.add('active');
       this. progressValue+=10;
+      // console.log(this.ans);
     }
+
+    
+    correctans(){
+      this.ans++;        
+    }
+
 
     
 
